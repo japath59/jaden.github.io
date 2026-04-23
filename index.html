@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>j.path</title>
+  
+  <link rel="stylesheet" href="style.css" />
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  
+  <main id="root">
+    <div class="min-h-screen bg-gradient-to-br from-[#2D336B] via-[#6096B4] to-[#93BFCF] text-white font-sans selection:bg-white selection:text-[#2D336B] p-6 md:p-12 lg:p-24 flex flex-col lowercase tracking-widest text-xs">
+      
+      <nav class="flex justify-between items-center border-b border-white/20 pb-6 mb-24 md:mb-40 text-[10px] md:text-xs">
+        <div class="flex gap-6 md:gap-12">          
+          <a href="#home" class="hover:text-white/60 hover:line-through transition-all">[ home ]</a>
+          <a href="#about" class="hover:text-white/60 hover:line-through transition-all">[ about ]</a>
+          <a href="#work" class="hover:text-white/60 hover:line-through transition-all">[ work ]</a>
+        </div>
+        <div class="font-mono text-white/70">
+          vol. 01
+        </div>
+      </nav>
+
+      <header class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 mb-40 items-start">
+        <div class="relative w-full aspect-[4/5] max-w-lg lg:-ml-12 pointer-events-none">
+          <div class="absolute inset-0 bg-black/10 mix-blend-overlay opacity-30 z-10"></div>
+          <img 
+            src="image.png" 
+            alt="cinematic soft focus silhouette" 
+            class="w-full h-full object-cover blur-3xl opacity-60 mix-blend-screen scale-110"
+          />
+        </div>
+        
+        <div class="flex flex-col gap-12 pt-0 lg:pt-24 max-w-md">
+          <h1 class="text-sm md:text-base font-bold tracking-[0.2em] text-white">
+            jaden pathammavong
+          </h1>
+          <div class="text-xs md:text-sm leading-loose text-white">
+            <p class="mb-8">
+              incoming early associate consultant intern at ibm.
+            </p>
+            <p class="mb-8 text-white/80">
+              Computational modeling and data analytics at virginia tech.
+            </p>
+            <p class="font-mono text-[10px] text-white/50">
+              recorded in virginia / 042126. <br />
+              all rights reserved.
+            </p>
+          </div>
+        </div>
+      </header>
+      <!-- add about section-->
+      <section id="about" class="mb-40">
+        <div class="border-b border-white/20 pb-4 mb-8 text-white/70 font-mono text-[10px]">
+          [ about // ]
+        </div>
+        <div class="text-xs md:text-sm leading-loose text-white">
+            <p class="mb-8">
+              As a third-year student at Virginia Tech studying Computational Modeling and Data Analytics (CMDA), I have a strong interest in the intersection of design, technology, and data. I am also interested in economics and how it explains the psychological exchange of value.
+            </p>
+            <p class="mb-8">
+              In addition to my developing skills in data analysis, visualization, mathematics, and statistics. I'm currently exploring data engineering, improving sql, python, and databricks. I want to work with cloud, data, and clients.
+            </p>
+            <p class="mb-8">
+              Outside of academics, I practice Kendo, a Japanese martial art that has taught me focus, discipline, and respect. I’m also deeply involved in music, I am apart of Virginia tech's wind ensemble and philharmonic orchestra. Continuing my dedication to playing helps me stay creative and balanced both in life and in problem-solving.
+            </p>
+      </section>
+
+      <!--Projects, dropdown menu for each project-->
+      <section id="work" class="mb-40">
+        <div class="border-b border-white/20 pb-4 mb-8 text-white/70 font-mono text-[10px]">
+          [ discography // ]
+        </div>
+        <div class="flex flex-col">
+          
+          <a href="#" class="group grid grid-cols-[80px_1fr_auto] md:grid-cols-[120px_1fr_auto] gap-4 md:gap-8 py-6 border-b border-white/20 items-baseline transition-colors hover:border-white/40">
+            <div class="font-mono text-white/70 text-[10px] md:text-xs group-hover:line-through transition-all">
+              2026.04
+            </div>
+            <div class="group-hover:text-white/80 transition-colors">
+              <span class="font-medium text-white">"Alpine case competition</span> 
+              <span class="text-white/50 ml-2 md:ml-4 text-[10px] hidden md:inline-block">— art direction</span>
+            </div>
+            <div class="text-right text-[10px] md:text-xs text-white/70 font-mono group-hover:line-through transition-all">
+              R / python(pandas)
+            </div>
+          </a>  
+
+          <a href="#" class="group grid grid-cols-[80px_1fr_auto] md:grid-cols-[120px_1fr_auto] gap-4 md:gap-8 py-6 border-b border-white/20 items-baseline transition-colors hover:border-white/40">
+            <div class="font-mono text-white/70 text-[10px] md:text-xs group-hover:line-through transition-all">
+              2026.04
+            </div>
+            <div class="group-hover:text-white/80 transition-colors">
+              <span class="font-medium text-white">"ASA Datafest"</span> 
+              <span class="text-white/50 ml-2 md:ml-4 text-[10px] hidden md:inline-block">— art direction</span>
+            </div>
+            <div class="text-right text-[10px] md:text-xs text-white/70 font-mono group-hover:line-through transition-all">
+              R / python(pandas)
+            </div>
+          </a>
+
+          <a href="#" class="group grid grid-cols-[80px_1fr_auto] md:grid-cols-[120px_1fr_auto] gap-4 md:gap-8 py-6 border-b border-white/20 items-baseline transition-colors hover:border-white/40">
+            <div class="font-mono text-white/70 text-[10px] md:text-xs group-hover:line-through transition-all">
+              2025.11
+            </div>
+            <div class="group-hover:text-white/80 transition-colors">
+              <span class="font-medium text-white">"CMDA data competition"</span> 
+              <span class="text-white/50 ml-2 md:ml-4 text-[10px] hidden md:inline-block">— art direction</span>
+            </div>
+            <div class="text-right text-[10px] md:text-xs text-white/70 font-mono group-hover:line-through transition-all">
+              R
+            </div>
+          </a>
+
+          <a href="#" class="group grid grid-cols-[80px_1fr_auto] md:grid-cols-[120px_1fr_auto] gap-4 md:gap-8 py-6 border-b border-white/20 items-baseline transition-colors hover:border-white/40">
+            <div class="font-mono text-white/70 text-[10px] md:text-xs group-hover:line-through transition-all">
+              2025.11
+            </div>
+            <div class="group-hover:text-white/80 transition-colors">
+              <span class="font-medium text-white">"Numina" powered by ibm</span> 
+              <span class="text-white/50 ml-2 md:ml-4 text-[10px] hidden md:inline-block">— lead designer</span>
+            </div>
+            <div class="text-right text-[10px] md:text-xs text-white/70 font-mono group-hover:line-through transition-all">
+              next.js / ibmwatsonx
+            </div>
+          </a>
+
+          
+
+          
+
+          
+          
+
+        </div>
+      </section>
+
+      <footer class="mt-auto border-t border-white/20 pt-6 flex justify-between items-center text-[10px] font-mono text-white/70">
+        
+        <a href="japath59@vt.edu" class="hover:text-white hover:line-through transition-colors">
+          [ email ]
+        </a>
+        
+        <a href="https://github.com/japath59" class="hover:text-white hover:line-through transition-colors">
+          [ github ]
+        </a>
+
+        <a href="www.linkedin.com/in/jadenpathammavong" class="hover:text-white hover:line-through transition-colors">
+          [ linkedin ]
+        </a>
+        
+        <span class="hidden md:inline-block text-white/30 font-sans">—</span>
+        <span>[ © 2026 ]</span>
+      </footer>
+      
+    </div>
+  </main>
+
+</body>
+</html>
